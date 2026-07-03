@@ -2,7 +2,8 @@
 
 Build a **Ledger / Wallet Service** in **NestJS** with two endpoints:
 
-- `POST /wallet/transaction` → record a new transaction.  
+- `POST /wallet/transaction` → record a new transaction.
+- `GET /wallet/transaction` → list all transactions
 
 ---
 
@@ -15,8 +16,8 @@ Build a **Ledger / Wallet Service** in **NestJS** with two endpoints:
   - All transactions are **append-only** (cannot be updated or deleted).  
 
 - **Currency Handling**  
-  - Internally store all amounts in **EGP**.  
-  - If a different currency is provided, you can use a **mock conversion service** before saving.  
+  - Internally store all amounts in **EGP**.
+  - Listing transaction(s) should show original currency
 
 - **Atomicity**  
   - All transactions must be **atomic** (balance should always remain consistent even under concurrent requests).  
