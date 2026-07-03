@@ -22,7 +22,7 @@ Build a **Ledger / Wallet Service** in **NestJS** with two endpoints:
   - All transactions must be **atomic** (balance should always remain consistent even under concurrent requests).  
 
 - **Idempotency**  
-  - If the same `transactionId` is sent more than once, process it **only once**.  
+  - If the same `referenceId` is sent more than once, process it **only once**.  
 
 ---
 
