@@ -10,7 +10,7 @@ Build a **Ledger / Wallet Service** in **NestJS** with two endpoints:
 ## Requirements
 
 - **Transactions & Ledger**  
-  - Record each transaction with `transactionId`, `type`, `amount`, `currency`, and `createdAt`.  
+  - Record each transaction with `referenceId`, `type`, `amount`, `currency`, and `createdAt`.  
   - Positive amounts increase balance, negative amounts decrease balance.  
   - Balance must **never go negative** (reject if insufficient funds).  
   - All transactions are **append-only** (cannot be updated or deleted).  
